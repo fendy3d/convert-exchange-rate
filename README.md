@@ -1,2 +1,5 @@
 # convert-exchange-rate
-Converts the exchange rate of your transaction row by row based on the day
+Converts the exchange rate of your transaction row by row based on the day. Very useful tool for multi-currency accounting.
+
+# Installation
+git clone 
