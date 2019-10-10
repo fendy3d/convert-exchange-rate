@@ -3,3 +3,6 @@ Converts the exchange rate of your transaction row by row based on the day. Very
 
 # Installation
 ```git clone https://github.com/fendy3d/convert-exchange-rate```
+
+# How to run
+Open your terminal and run ```python3 convertExchange.py```
