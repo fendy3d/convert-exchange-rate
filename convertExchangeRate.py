@@ -18,10 +18,15 @@ SGD_list = df['SGD'].tolist() # Convert SGD to list of SGDs
 # Execute the currency exchange
 c = CurrencyRates()
 print ("There are a total of %i data points." %len(date_list))
+
+dateFormat1 = "%d/%m/%y" # eg: 21/04/98
+dateFormat2 = "%d/%m/%Y" # eg: 21/04/1998
+dateFormatToUse = dateFormat2
+
 for row in range(len(date_list)):
         row_date = date_list[row]
         row_SGD = SGD_list[row]
-        date_obj = datetime.strptime(str(date_list[row]),"%d/%m/%y") # convert string to datetime
+        date_obj = datetime.strptime(str(date_list[row]), dateFormatToUse) # convert string to datetime
         rate = c.get_rate(currencyFROM, currencyTO, date_obj) # get the exchange rate
         print (row_SGD*rate)
 
